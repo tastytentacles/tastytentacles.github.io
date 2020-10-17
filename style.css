@@ -1,0 +1,82 @@
+.main_body {
+    background: black;
+
+    overflow-x: hidden;
+    max-width: 720px;
+    width: 90vw;
+    margin: auto;
+}
+
+.text_box {
+    position: relative;
+    color: white;
+    background: rgb(24, 24, 24);
+    z-index: 999;
+
+    padding: 16px;
+    border-radius: 8px;
+
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.inline_image {
+    display: block;
+    
+    width: 80%;
+    height: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avi_holder {
+    display: block;
+    
+    width: 80%;
+    min-height: 50vh;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avi {
+    display: block;
+    display: absolute;
+
+    max-width: 25%;
+    max-height: 25%;
+    z-index: 1;
+    
+    left: 50%;
+    top: 20vh;
+
+    transform: translate(-50%, -50%);
+    
+    position: absolute;
+    border-radius: 16%;
+}
+
+.pentacle {
+    display: block;
+    position: absolute;
+    width: 60%;
+
+    transform-origin: top left;
+
+    left: 50%;
+    top: 20vh;
+
+    animation: spin 32s infinite linear;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
+    
+    to {
+        transform: rotate(359deg) translate(-50%, -50%);
+    }
+}
