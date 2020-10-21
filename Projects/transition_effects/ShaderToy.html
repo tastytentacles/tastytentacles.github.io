@@ -34,17 +34,25 @@
 	<script type="text/javascript">
 var engine = new Engine;
 var canvas = document.getElementById('canvas');
-
+var clear_bit = true;
 
 const EXECUTABLE_NAME = 'ShaderToy';
 const MAIN_PACK = 'ShaderToy.pck';
 
 if (!Engine.isWebGLAvailable()) {
     alert("webGL is not supported!");
+    clear_bit = false;
 }
 
-engine.setCanvas(canvas);
-engine.startGame(EXECUTABLE_NAME, MAIN_PACK);
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    alert("demos need to be run on desktop!");
+    clear_bit = false;
+}
+
+if (clear_bit) {
+    engine.setCanvas(canvas);
+    engine.startGame(EXECUTABLE_NAME, MAIN_PACK);
+}
     </script>
 </body>
 </html>
