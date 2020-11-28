@@ -24,6 +24,7 @@
 </head>
 <body>
     <header>[ Transitions ]</header>
+    <header id="loadbox"> loading... </header>
 
     <canvas id="canvas" width="512" height="512">
         HTML5 canvas appears to be unsupported in the current browser.<br />
@@ -40,7 +41,7 @@ const EXECUTABLE_NAME = 'ShaderToy';
 const MAIN_PACK = 'ShaderToy.pck';
 
 if (!Engine.isWebGLAvailable()) {
-    alert("webGL is not supported!");
+    alert("webGL is not supported in your browser!");
     clear_bit = false;
 }
 
@@ -51,7 +52,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 if (clear_bit) {
     engine.setCanvas(canvas);
-    engine.startGame(EXECUTABLE_NAME, MAIN_PACK);
+    engine.startGame(EXECUTABLE_NAME, MAIN_PACK).then(() => {
+        document.getElementById("loadbox").hidden = true;
+    });
 }
     </script>
 </body>
