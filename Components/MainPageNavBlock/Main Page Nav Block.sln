@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main Page Nav Block", "Main Page Nav Block.csproj", "{95A3245C-C66C-45A5-9577-1D1E09711297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{95A3245C-C66C-45A5-9577-1D1E09711297}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
