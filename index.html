@@ -3,14 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aleq ~<3</title>
 
     <script>
-        window.location = 'Components/MainPageNavBlock/Export/MainPageNavBlock.html'
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            console.log("desktop detected, switching to full site");
+            console.log(window.innerWidth + " :: " + window.innerHeight);
+            if (window.innerWidth < window.innerHeight) {
+                console.log("demo, mobile mode!");
+            } else {
+                window.location = 'Components/MainPageNavBlock/Export/MainPageNavBlock.html';
+            }
+        }
+        
+        function init() {
+            var phrase_of_the_day = document.getElementById("phrase");
+            var quotes = [
+                "Come get some!",
+                "Eventually you just run out of bees.",
+                "No. Don't call me that.",
+                "I guess but can you really call that love?",
+                "Look neither of us is flying the plane.",
+                "Ok gang, time to split up!",
+                "Hair sticks are fun and useful.",
+                "Fluids at 10% and dropping.",
+                "Give me gooobers!",
+                "Adventure time was a good show.",
+                "I like Rick and Morty, just don't talk to me about it.",
+                "For the Father land!",
+                "For the Mother land!",
+                "For the Enby land!",
+                "Heat from fire! Fire from heart!",
+                "Watch me do a slut drop.",
+                "I can see my house from here!",
+                "Minceraft."
+            ]
+
+            phrase_of_the_day.innerHTML += quotes[[Math.floor(Math.random()*quotes.length)]];
+        }
     </script>
+
+    <style>
+        body {
+            margin: 0px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: yellowgreen;
+            /* background-color: black; */
+
+            background: repeating-linear-gradient(
+                0deg,
+                #050505 25%,
+                #050505 50%,
+                #070707 50%,
+                #070707 75%
+                );
+            background-size: 5% 5%;
+
+            animation: scroll_0 10s linear infinite;
+            /* animation-timing-function: linear; */
+        }
+
+        .screen_shadow {
+            position: fixed;
+            top: 0px;
+            min-height: 100%;
+            min-width: 100%;
+            box-shadow: inset 0 0 64px 0px black;
+        }
+
+        .head {
+            opacity: 0;
+            animation: fade_in 5s ease 1.5s 1 normal forwards;
+        }
+
+        .body {
+            text-align: center;
+
+            opacity: 0;
+            animation: fade_in 5s ease 7s 1 normal forwards;
+        }
+
+        .body pre {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .end {
+            opacity: 0;
+            animation: fade_in 5s ease 12s 1 normal forwards;
+        }
+
+        @keyframes scroll_0 {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+
+        @keyframes fade_in {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+    </style>
 </head>
-<body>
+<body onload="init();">
+    <audio autoplay>
+        <source src="boot.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="screen_shadow"></div>
+
+    <div class="head">
+        <h3>- - - -- - --- - --- --------------- --- - --- - -- - - -</h3>
+        <h1>- -- Aleq de Villiers -- -</h1>
+        <h3>- - - -- - --- - --- --------------- --- - --- - -- - - -</h3>
+    </div>
+    <div class="body">
+<pre id="phrase">Base: Biological Humanoid.
+Fabrication: 14 11 1994, South Africa.
+
+Speciality: Building Interactive 2D, 3D and VR
+    experiences. utilizing mixed media asset
+    production including photography, digital
+    painting, spirit making, CG assets
+    and procedural generation.
+
+Skills: Video Editing, Programming,
+    3D printing, Problem solving,
+    Communication, Linux.
+
+Visit this website again from a desktop browser
+    for an interactive demonstration of the work
+    I can do. a mouse and keyboard are advised.
     
+    Some parts may also require a VR headset.
+
+Phrase of the day:
+    </pre>
+    </div>
+
+    <img class="end" src="site_link.webp" alt="pass me on!">
+    <h2 class="end"> ~ <3 </h2>
 </body>
 </html>
