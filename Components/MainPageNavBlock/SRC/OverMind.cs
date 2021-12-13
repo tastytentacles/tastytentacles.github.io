@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 public class OverMind : Spatial {
-    JavaScriptObject j_callback;
+    //JavaScriptObject j_callback;
     
     // Declare member variables here. Examples:
     // private int a = 2;

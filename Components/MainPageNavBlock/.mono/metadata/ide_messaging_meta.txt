@@ -1,2 +1,2 @@
-﻿54573
+﻿49856
 C:/Users/Aster/scoop/apps/godot-mono/current/godot.exe
