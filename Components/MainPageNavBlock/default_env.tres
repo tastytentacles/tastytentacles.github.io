@@ -6,3 +6,8 @@
 background_mode = 1
 background_sky = SubResource( 1 )
 background_color = Color( 0.0196078, 0.0313726, 0.0117647, 1 )
+ssao_intensity = 10.0
+ssao_radius2 = 2.0
+ssao_intensity2 = 10.0
+ssao_light_affect = 0.25
+dof_blur_far_distance = 20.0
